@@ -8,12 +8,20 @@ const config = {
   ],
   prefix: "",
   theme: {
+
+
     container: {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1280px",
       },
+    },
+
+    colors:{
+heading:'#373737',
+subheading:'#707070',
+
     },
     extend: {
       keyframes: {
