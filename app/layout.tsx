@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/src/lib/ui/theme-provider";
+import Header from "@/src/common/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,13 +33,14 @@ export default function RootLayout({ children }: Readonly<{
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body>
+        <body className=" ">
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >
+            <Header/>
             {children}
           </ThemeProvider>
         </body>

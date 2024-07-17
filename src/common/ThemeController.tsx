@@ -21,7 +21,7 @@ const ThemeController = () => {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="center" className='bg-[#252525] dark:bg-[#fff] hover:bg-[#25252590] dark:text-heading  text-[#fff]'>
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light
         </DropdownMenuItem>

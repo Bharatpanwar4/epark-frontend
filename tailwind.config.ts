@@ -5,6 +5,7 @@ const config = {
   content: [
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    
   ],
   prefix: "",
   theme: {
@@ -15,8 +16,14 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1280px",
+        'xl':'1080px',
+        'lg':'900px',
+        'md':'600px',
+        'sm':'400px'
+
       },
     },
+ 
 
     colors:{
 heading:'#373737',
